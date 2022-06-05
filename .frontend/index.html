@@ -20,14 +20,45 @@
           <th scope="col">director</th>
           <th scope="col">image</th>
           <th scope="col">Details</th>
+          <th scope="col">Delete !</th>
         </tr>
       </thead>
       <tbody>
       </tbody>
-      
     </table>
+
+    <form action="" method="post" class="form-example" >
+        <div class="form-example">
+          <label for="name">Title: </label>
+          <input type="text" name="title" id="title" required>
+        </div>
+        <div class="form-example">
+          <label for="email">Director: </label>
+          <input type="text" name="director" id="director" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Stars (separator : ,) </label>
+            <input type="text" name="stars" id="stars" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Image: </label>
+            <input type="text" name="image" id="image" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Description: </label>
+            <input type="text" name="description" id="description" required>
+        </div>
+        <div class="form-example">
+            <label for="email">ShowTimes : </label>
+            <input type="text" name="showtimes" id="showtimes" required>
+        </div>
+        <div class="form-example">
+          <input type="submit" id="submit" value="Subscribe!">
+        </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./form.js"></script>
   </body>
 </html>

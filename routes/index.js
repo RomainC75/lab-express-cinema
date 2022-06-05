@@ -29,4 +29,24 @@ router.get('/:id', async (req,res,next) =>{
   }
 })
 
+router.post('/', async (req,res,next) =>{
+  try{
+    console.log('-->body',req.body)
+    const ans = await Movie.create(req.body)
+    res.status(200).json(ans)
+  }catch(e){
+    next(e)
+  }
+})
+
+router.delete('/:id', async (req,res,next) =>{
+  try{
+    
+    const ans = await Movie.findByIdAndDelete(req.params.id)
+    res.status(200).json(ans)
+  }catch(e){
+    next(e)
+  }
+})
+
 module.exports = router

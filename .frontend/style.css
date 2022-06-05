@@ -47,6 +47,11 @@
   display: none;
 }
 
+.delete {
+  width: 10px;
+  height: 10px;
+}
+
 @-webkit-keyframes spinnerAnim {
   0% {
     -webkit-transform: scale(1);

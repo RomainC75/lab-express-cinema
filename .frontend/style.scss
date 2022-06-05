@@ -44,6 +44,11 @@
     display:none;
 }
 
+.delete{
+    width:10px;
+    height:10px;
+}
+
 @keyframes spinnerAnim {
     0%{
         transform: scale(1);

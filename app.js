@@ -24,11 +24,15 @@ const capitalized = (string) =>
 app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`
 
 app.use(cors())
-// 👇 Start handling routes here
-const index = require('./routes/index')
-app.use('/', index)
 
+
+// 👇 Start handling routes here
 app.use('/movies',moviesRouter)
+
+// const index = require('./routes/index')
+// app.use('/', index)
+
+
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes

@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+.movieBanner{
+    width:30px;
+}
+
+.detailsIcon{
+    width:20px;
+    
+}
+
+.detailsParent{
+    position:relative;
+    &:hover > div{
+        visibility: visible;
+    }
+}
+
+.details{
+    visibility: hidden;
+    position: absolute;
+    border: 1px solid black;
+    width: 400px;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    background-color: white;
+    &__type{
+        font-weight: 800;
+    }
+}
+
+.spinner{
+    width:30px;
+    height:30px;
+    background-color: red;
+    border-radius:100%;
+    animation: spinnerAnim 1s infinite;
+}
+
+.toShowAfterFetching{
+    display:none;
+}
+
+@keyframes spinnerAnim {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
